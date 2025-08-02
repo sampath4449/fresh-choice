@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FreshPrice - Compare Fruit and Vegetable Prices</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <span>FreshPrice</span>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#compare">Compare</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <section id="home" class="hero">
+            <h1>Compare Fruit and Vegetable Prices</h1>
+            <p>Check prices across different stores in your area</p>
+            <div class="search-box">
+                <input type="text" placeholder="Search items..." id="searchInput">
+                <button id="searchBtn">Search</button>
+            </div>
+        </section>
+
+        <section class="items-grid" id="itemsGrid">
+            <div class="item-card">
+                <div class="item-image">
+                    <img src="images/apple.jpg" alt="Apple">
+                </div>
+                <div class="item-info">
+                    <h3>Apple</h3>
+                    <div class="price">₹120/kg</div>
+                    <button class="compare-btn">Compare Prices</button>
+                </div>
+            </div>
+            <div class="item-card">
+                <div class="item-image">
+                    <img src="images/banana.jpg" alt="Banana">
+                </div>
+                <div class="item-info">
+                    <h3>Banana</h3>
+                    <div class="price">₹45/dozen</div>
+                    <button class="compare-btn">Compare Prices</button>
+                </div>
+            </div>
+            <div class="item-card">
+                <div class="item-image">
+                    <img src="images/carrot.jpg" alt="Carrot">
+                </div>
+                <div class="item-info">
+                    <h3>Carrot</h3>
+                    <div class="price">₹40/kg</div>
+                    <button class="compare-btn">Compare Prices</button>
+                </div>
+            </div>
+            <div class="item-card">
+                <div class="item-image">
+                    <img src="images/potato.jpg" alt="Potato">
+                </div>
+                <div class="item-info">
+                    <h3>Potato</h3>
+                    <div class="price">₹25/kg</div>
+                    <button class="compare-btn">Compare Prices</button>
+                </div>
+            </div>
+            <div class="item-card">
+                <div class="item-image">
+                    <img src="images/tomato.jpg" alt="Tomato">
+                </div>
+                <div class="item-info">
+                    <h3>Tomato</h3>
+                    <div class="price">₹30/kg</div>
+                    <button class="compare-btn">Compare Prices</button>
+                </div>
+            </div>
+            <div class="item-card">
+                <div class="item-image">
+                    <img src="images/onion.jpg" alt="Onion">
+                </div>
+                <div class="item-info">
+                    <h3>Onion</h3>
+                    <div class="price">₹35/kg</div>
+                    <button class="compare-btn">Compare Prices</button>
+                </div>
+            </div>
+            <div class="item-card">
+                <div class="item-image">
+                    <img src="images/orange.jpg" alt="Orange">
+                </div>
+                <div class="item-info">
+                    <h3>Orange</h3>
+                    <div class="price">₹80/kg</div>
+                    <button class="compare-btn">Compare Prices</button>
+                </div>
+            </div>
+            <div class="item-card">
+                <div class="item-image">
+                    <img src="images/spinach.jpg" alt="Spinach">
+                </div>
+                <div class="item-info">
+                    <h3>Spinach</h3>
+                    <div class="price">₹20/bunch</div>
+                    <button class="compare-btn">Compare Prices</button>
+                </div>
+            </div>
+            <div class="item-card">
+                <div class="item-image">
+                    <img src="images/brinjal.jpg" alt="Brinjal">
+                </div>
+                <div class="item-info">
+                    <h3>Brinjal</h3>
+                    <div class="price">₹40/kg</div>
+                    <button class="compare-btn">Compare Prices</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="compare" class="price-table">
+            <h2>Price Comparison</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Item</th>
+                        <th>Store 1</th>
+                        <th>Store 2</th>
+                        <th>Store 3</th>
+                    </tr>
+                </thead>
+                <tbody id="priceTable">
+                    <tr>
+                        <td>Apple</td>
+                        <td>₹120/kg</td>
+                        <td>₹110/kg</td>
+                        <td>₹130/kg</td>
+                    </tr>
+                    <tr>
+                        <td>Banana</td>
+                        <td>₹45/dozen</td>
+                        <td>₹40/dozen</td>
+                        <td>₹50/dozen</td>
+                    </tr>
+                    <tr>
+                        <td>Carrot</td>
+                        <td>₹40/kg</td>
+                        <td>₹35/kg</td>
+                        <td>₹45/kg</td>
+                    </tr>
+                    <tr>
+                        <td>Potato</td>
+                        <td>₹25/kg</td>
+                        <td>₹22/kg</td>
+                        <td>₹28/kg</td>
+                    </tr>
+                    <tr>
+                        <td>Tomato</td>
+                        <td>₹30/kg</td>
+                        <td>₹25/kg</td>
+                        <td>₹35/kg</td>
+                    </tr>
+                    <tr>
+                        <td>Onion</td>
+                        <td>₹35/kg</td>
+                        <td>₹30/kg</td>
+                        <td>₹40/kg</td>
+                    </tr>
+                    <tr>
+                        <td>Orange</td>
+                        <td>₹80/kg</td>
+                        <td>₹75/kg</td>
+                        <td>₹85/kg</td>
+                    </tr>
+                    <tr>
+                        <td>Spinach</td>
+                        <td>₹20/bunch</td>
+                        <td>₹18/bunch</td>
+                        <td>₹22/bunch</td>
+                    </tr>
+                    <tr>
+                        <td>Brinjal</td>
+                        <td>₹40/kg</td>
+                        <td>₹35/kg</td>
+                        <td>₹45/kg</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+
+    <footer id="contact">
+        <div class="container">
+            <p>© 2025 FreshPrice</p>
+            <p>Email: freshprice28@gmail.com</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+
+    
+</body>
+</html>
