@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FreshPrice - Compare Fruit and Vegetable Prices</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -30,99 +31,21 @@
                 <input type="text" placeholder="Search items..." id="searchInput">
                 <button id="searchBtn">Search</button>
             </div>
+            <div class="filter-dropdown">
+                <button class="filter-btn">Filter by Category ▼</button>
+                <div class="filter-content">
+                    <a href="#" data-category="all">All Items</a>
+                    <a href="#" data-category="fruit">Fruits</a>
+                    <a href="#" data-category="vegetable">Vegetables</a>
+                </div>
+            </div>
+            <button id="openMultiCalculatorTop" class="multi-calc-btn">
+                <i class="fas fa-calculator"></i> Calculate Multiple Items
+            </button>
         </section>
 
         <section class="items-grid" id="itemsGrid">
-            <div class="item-card">
-                <div class="item-image">
-                    <img src="images/apple.jpg" alt="Apple">
-                </div>
-                <div class="item-info">
-                    <h3>Apple</h3>
-                    <div class="price">₹120/kg</div>
-                    <button class="compare-btn">Compare Prices</button>
-                </div>
-            </div>
-            <div class="item-card">
-                <div class="item-image">
-                    <img src="images/banana.jpg" alt="Banana">
-                </div>
-                <div class="item-info">
-                    <h3>Banana</h3>
-                    <div class="price">₹45/dozen</div>
-                    <button class="compare-btn">Compare Prices</button>
-                </div>
-            </div>
-            <div class="item-card">
-                <div class="item-image">
-                    <img src="images/carrot.jpg" alt="Carrot">
-                </div>
-                <div class="item-info">
-                    <h3>Carrot</h3>
-                    <div class="price">₹40/kg</div>
-                    <button class="compare-btn">Compare Prices</button>
-                </div>
-            </div>
-            <div class="item-card">
-                <div class="item-image">
-                    <img src="images/potato.jpg" alt="Potato">
-                </div>
-                <div class="item-info">
-                    <h3>Potato</h3>
-                    <div class="price">₹25/kg</div>
-                    <button class="compare-btn">Compare Prices</button>
-                </div>
-            </div>
-            <div class="item-card">
-                <div class="item-image">
-                    <img src="images/tomato.jpg" alt="Tomato">
-                </div>
-                <div class="item-info">
-                    <h3>Tomato</h3>
-                    <div class="price">₹30/kg</div>
-                    <button class="compare-btn">Compare Prices</button>
-                </div>
-            </div>
-            <div class="item-card">
-                <div class="item-image">
-                    <img src="images/onion.jpg" alt="Onion">
-                </div>
-                <div class="item-info">
-                    <h3>Onion</h3>
-                    <div class="price">₹35/kg</div>
-                    <button class="compare-btn">Compare Prices</button>
-                </div>
-            </div>
-            <div class="item-card">
-                <div class="item-image">
-                    <img src="images/orange.jpg" alt="Orange">
-                </div>
-                <div class="item-info">
-                    <h3>Orange</h3>
-                    <div class="price">₹80/kg</div>
-                    <button class="compare-btn">Compare Prices</button>
-                </div>
-            </div>
-            <div class="item-card">
-                <div class="item-image">
-                    <img src="images/spinach.jpg" alt="Spinach">
-                </div>
-                <div class="item-info">
-                    <h3>Spinach</h3>
-                    <div class="price">₹20/bunch</div>
-                    <button class="compare-btn">Compare Prices</button>
-                </div>
-            </div>
-            <div class="item-card">
-                <div class="item-image">
-                    <img src="images/brinjal.jpg" alt="Brinjal">
-                </div>
-                <div class="item-info">
-                    <h3>Brinjal</h3>
-                    <div class="price">₹40/kg</div>
-                    <button class="compare-btn">Compare Prices</button>
-                </div>
-            </div>
+            <!-- Items will be loaded dynamically by JavaScript -->
         </section>
 
         <section id="compare" class="price-table">
@@ -137,60 +60,7 @@
                     </tr>
                 </thead>
                 <tbody id="priceTable">
-                    <tr>
-                        <td>Apple</td>
-                        <td>₹120/kg</td>
-                        <td>₹110/kg</td>
-                        <td>₹130/kg</td>
-                    </tr>
-                    <tr>
-                        <td>Banana</td>
-                        <td>₹45/dozen</td>
-                        <td>₹40/dozen</td>
-                        <td>₹50/dozen</td>
-                    </tr>
-                    <tr>
-                        <td>Carrot</td>
-                        <td>₹40/kg</td>
-                        <td>₹35/kg</td>
-                        <td>₹45/kg</td>
-                    </tr>
-                    <tr>
-                        <td>Potato</td>
-                        <td>₹25/kg</td>
-                        <td>₹22/kg</td>
-                        <td>₹28/kg</td>
-                    </tr>
-                    <tr>
-                        <td>Tomato</td>
-                        <td>₹30/kg</td>
-                        <td>₹25/kg</td>
-                        <td>₹35/kg</td>
-                    </tr>
-                    <tr>
-                        <td>Onion</td>
-                        <td>₹35/kg</td>
-                        <td>₹30/kg</td>
-                        <td>₹40/kg</td>
-                    </tr>
-                    <tr>
-                        <td>Orange</td>
-                        <td>₹80/kg</td>
-                        <td>₹75/kg</td>
-                        <td>₹85/kg</td>
-                    </tr>
-                    <tr>
-                        <td>Spinach</td>
-                        <td>₹20/bunch</td>
-                        <td>₹18/bunch</td>
-                        <td>₹22/bunch</td>
-                    </tr>
-                    <tr>
-                        <td>Brinjal</td>
-                        <td>₹40/kg</td>
-                        <td>₹35/kg</td>
-                        <td>₹45/kg</td>
-                    </tr>
+                    <!-- Price comparison data will be loaded dynamically by JavaScript -->
                 </tbody>
             </table>
         </section>
@@ -203,8 +73,32 @@
         </div>
     </footer>
 
-    <script src="script.js"></script>
+    <!-- Bulk Calculator Modal -->
+    <div id="bulkModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h3>Bulk Price Calculator</h3>
+            <div id="bulkItemName"></div>
+            <input type="number" id="bulkQuantity" placeholder="Enter quantity" min="1">
+            <button id="calculateBulk">Calculate</button>
+            <div id="bulkResults"></div>
+        </div>
+    </div>
 
-    
+    <!-- Multi-Item Calculator Modal -->
+    <div id="multiBulkModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h3>Multi-Item Calculator</h3>
+            <div class="modal-scrollable">
+                <div id="multiItemsContainer"></div>
+            </div>
+            <button id="addAnotherItem"><i class="fas fa-plus"></i> Add Item</button>
+            <button id="calculateMultiBulk">Calculate Total</button>
+            <div id="multiBulkResults"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
